@@ -56,3 +56,25 @@ Este proyecto es la prueba de mi método de trabajo. Mi objetivo es **saltar la 
 * **Mira mi Perfil:** [in/jmdev365](https://www.linkedin.com/in/jmdev365/)
 
 ¡Listo para el próximo desafío!
+
+---
+
+## SEO improvements (automated changes)
+
+I applied a set of SEO and accessibility improvements to the site. Key changes:
+
+- Added improved meta tags in `index.html`: canonical, robots, updated title and description, Open Graph and Twitter Card tags.
+- Added JSON-LD structured data (WebSite, Person, BreadcrumbList) for rich result eligibility.
+- Added resource hints (preconnect to external icon/avatar hosts and preload for CSS).
+- Added `public/robots.txt` and `public/sitemap.xml` with main routes.
+- Improved accessibility and link clarity: skip-to-content link, aria-labels for key CTAs and project links.
+- Small SPA helper: `src/utils/seo.tsx` provides a `useSeo` hook to set title and description on route/component mount.
+
+How to verify:
+
+1. Run Lighthouse (in Chrome DevTools) and check Accessibility and SEO scores.
+2. Use Google's Rich Results Test: https://search.google.com/test/rich-results and paste the homepage URL to validate JSON-LD.
+3. Inspect `https://fastsites-jm.vercel.app/robots.txt` and `https://fastsites-jm.vercel.app/sitemap.xml` (replace with your deployed domain).
+4. Run `npm run build` to ensure the production build is clean (already validated locally).
+
+If you want, I can also add server-side rendering or prerendering for even better SEO, or integrate `react-helmet`/`@remix-run/react` style head management for multi-page metadata.

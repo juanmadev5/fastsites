@@ -79,6 +79,7 @@ export default function Portfolio() {
                   href={p.link}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={`Ver proyecto: ${p.title}`} 
                   className="text-[var(--primary)] font-semibold hover:underline"
                 >
                   Ver proyecto →

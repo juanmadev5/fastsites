@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://fastsites-jm.vercel.app/sitemap.xml

@@ -2,47 +2,100 @@
 <html lang="es" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>
-      Fastsites.jm | Desarrollo Web Profesional: Rápidas, Bajo Costo
-    </title>
-
+    <!-- Primary metadata -->
+    <title>Fastsites.jm | Desarrollo Web Profesional — MVPs y Landing Pages Rápidas</title>
     <meta
       name="description"
-      content="Desarrollo web profesional especializado en React y Tailwind CSS. Construyo MVPs y Landing Pages Rápidas con Mantenimiento Cero. ¡Lanza tu proyecto en semanas!"
+      content="Desarrollo web profesional con React y Tailwind CSS. Creo MVPs y landing pages rápidas y de bajo costo con enfoque en rendimiento y conversión. Lanza tu proyecto en semanas."
     />
+    <meta name="keywords" content="Desarrollo web, React, Tailwind CSS, MVP, Landing Page, rendimiento web, portafolio" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://fastsites-jm.vercel.app/" />
 
-    <meta
-      name="keywords"
-      content="Desarrollador Web, React, Tailwind CSS, MVP, Landing Page, Bajo Costo, Mantenimiento Cero, Desarrollo Front-end"
-    />
-
-    <meta
-      property="og:title"
-      content="Fastsites.jm | Websites Rápidas, Bajo Costo"
-    />
-    <meta
-      property="og:description"
-      content="Desarrollo profesional de MVPs y Landing Pages con React y Tailwind CSS. De idea a lanzamiento en semanas."
-    />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content="Fastsites.jm" />
+    <meta property="og:title" content="Fastsites.jm | Websites Rápidas, Bajo Costo" />
+    <meta property="og:description" content="Desarrollo profesional de MVPs y Landing Pages con React y Tailwind CSS. De idea a lanzamiento en semanas." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://fastsites-jm.vercel.app/" />
-    <meta
-      property="og:image"
-      content="https://raw.githubusercontent.com/juanmadev5/fastsites/refs/heads/main/public/site-preview.png"
-    />
+    <meta property="og:image" content="/site-preview.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@juanmadev5" />
+    <meta name="twitter:creator" content="@juanmadev5" />
+    <meta name="twitter:title" content="Fastsites.jm | Websites Rápidas, Bajo Costo" />
+    <meta name="twitter:description" content="Desarrollo profesional de MVPs y Landing Pages con React y Tailwind CSS." />
+    <meta name="twitter:image" content="/site-preview.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <!-- Resource hints -->
+    <link rel="preconnect" href="https://skillicons.dev" crossorigin />
+    <link rel="preconnect" href="https://avatars.githubusercontent.com" crossorigin />
+    <link rel="preload" href="/src/index.css" as="style" />
+  <link rel="preload" href="/Comfortaa-Regular.ttf" as="font" type="font/ttf" crossorigin>
 
     <meta name="theme-color" content="#12140e" />
-    <meta
-      name="apple-mobile-web-app-status-bar-style"
-      content="black-translucent"
-    />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <!-- JSON-LD structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://fastsites-jm.vercel.app/#website",
+            "url": "https://fastsites-jm.vercel.app/",
+            "name": "Fastsites.jm",
+            "description": "Desarrollo web profesional con React y Tailwind CSS. Creo MVPs y landing pages rápidas y de bajo costo.",
+            "publisher": { "@id": "https://fastsites-jm.vercel.app/#person" }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://fastsites-jm.vercel.app/#person",
+            "name": "Juan Manuel Velázquez",
+            "url": "https://github.com/juanmadev5",
+            "sameAs": [
+              "https://github.com/juanmadev5",
+              "https://linkedin.com/in/jmdev365"
+            ]
+          }
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://fastsites-jm.vercel.app/"
+          }
+        ]
+      }
+    </script>
+
+    <!-- Stylesheet -->
     <link href="/src/index.css" rel="stylesheet" />
   </head>
   <body class="bg-[var(--background)] text-[var(--onBackground)]">
-    <div id="root"></div>
+    <!-- Accessibility: skip link -->
+    <a href="#main" class="skip-to-content absolute -top-20 focus:top-4 left-4 bg-[var(--primary)] text-[var(--onPrimary)] p-2 rounded z-50">Saltar al contenido</a>
+
+    <main id="main">
+      <div id="root"></div>
+    </main>
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

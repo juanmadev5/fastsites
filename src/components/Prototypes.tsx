@@ -43,6 +43,7 @@ export default function Prototypes() {
           </ul>
           <a
             href="#contacto"
+            aria-label="Ir al formulario de contacto"
             className="mt-10 inline-block bg-[var(--primary)] text-[var(--onPrimary)] text-lg px-8 py-3 rounded-lg font-bold shadow-xl hover:bg-[var(--secondary)] transition duration-300"
           >
             ¡Empecemos a Codear! →
