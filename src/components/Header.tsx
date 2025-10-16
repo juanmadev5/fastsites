@@ -17,7 +17,7 @@ export default function Header() {
   return (
     <header className="fixed top-0 w-full z-50 bg-[var(--background)]/90 backdrop-blur border-b border-[var(--primaryContainer)]">
       <div className="container mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
-        <h1 className="text-2xl font-bold text-[var(--primary)]">JM Dev</h1>
+        <h1 className="text-2xl font-bold text-[var(--primary)]">Fastsites.jm</h1>
 
         <nav className="hidden md:flex space-x-8 text-sm text-[var(--secondary)]">
           {navLinks.map((link) => (
