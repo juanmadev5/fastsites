@@ -17,13 +17,13 @@ export default function AboutMe() {
           <h3 className="text-3xl font-bold text-[var(--primary)] mb-6">
             Quién Soy
           </h3>
-          <p className="text-lg text-[var(--onSurface)] mb-10">
+          <p className="text-lg text-[var(--onSurface)] mb-10 text-pretty">
             Esta aventura de desarrollo comenzó como un reto personal. Soy un
-            desarrollador que ha decidido crear soluciones web
+            desarrollador que ha decidido crear soluciones web{" "}
             <strong>intuitivas y funcionales</strong> en solitario. Mi misión es
             combinar diseño de alto impacto con tecnología moderna,
             especializándome en soluciones rápidas con tecnologías como React y
-            Tailwind para ofrecer <strong>experiencias excepcionales</strong>
+            Tailwind para ofrecer <strong>experiencias excepcionales</strong>{" "}
             sin complicaciones, poniendo a prueba mi stack y mis límites en cada
             proyecto.
           </p>
