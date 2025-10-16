@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Minimal Dark Landing Page</title>
+  </head>
+
+  <body class="bg-gray-950 text-gray-200 font-sans">
+    <!-- Navbar -->
+    <header
+      class="fixed top-0 left-0 w-full z-50 bg-gray-950/80 backdrop-blur border-b border-gray-800"
+    >
+      <div
+        class="container mx-auto flex justify-between items-center py-4 px-6"
+      >
+        <h1 class="text-xl font-semibold text-white tracking-tight">
+          DarkBrand
+        </h1>
+        <nav class="hidden md:flex space-x-8 text-gray-400 text-sm">
+          <a href="#home" class="hover:text-white transition">Home</a>
+          <a href="#features" class="hover:text-white transition">Features</a>
+          <a href="#about" class="hover:text-white transition">About</a>
+          <a href="#contact" class="hover:text-white transition">Contact</a>
+        </nav>
+        <button id="menu-btn" class="md:hidden text-gray-400 hover:text-white">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <nav
+        id="mobile-menu"
+        class="hidden md:hidden bg-gray-950 border-t border-gray-800"
+      >
+        <div class="flex flex-col p-4 space-y-3 text-gray-400 text-sm">
+          <a href="#home" class="hover:text-white transition">Home</a>
+          <a href="#features" class="hover:text-white transition">Features</a>
+          <a href="#about" class="hover:text-white transition">About</a>
+          <a href="#contact" class="hover:text-white transition">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="h-screen flex flex-col justify-center items-center text-center px-6"
+    >
+      <h2 class="text-5xl md:text-6xl font-bold text-white mb-6 tracking-tight">
+        Build with Purpose
+      </h2>
+      <p class="text-gray-400 max-w-2xl mx-auto mb-8">
+        A minimalist dark landing page built with Tailwind CSS — designed to be
+        clean, bold, and timeless.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a
+          href="#features"
+          class="bg-white text-gray-950 font-semibold px-8 py-3 rounded-full hover:bg-gray-200 transition"
+        >
+          Get Started
+        </a>
+        <a
+          href="#about"
+          class="border border-gray-700 px-8 py-3 rounded-full text-gray-300 hover:bg-gray-800 transition"
+        >
+          Learn More
+        </a>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="py-24 border-t border-gray-800">
+      <div class="container mx-auto px-6 text-center">
+        <h3 class="text-3xl font-semibold mb-4 text-white">
+          Powerful Simplicity
+        </h3>
+        <p class="text-gray-400 max-w-2xl mx-auto mb-16">
+          Focused on the essentials — clean code, fast load times, and elegant
+          design.
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-10">
+          <!-- Feature 1 -->
+          <div
+            class="p-8 bg-gray-900/50 rounded-2xl border border-gray-800 hover:border-gray-700 transition"
+          >
+            <div class="text-white mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-8 h-8 mx-auto"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 16h-1v-4h-1m4 4h-1V9m0 0l-4 4m0 0H8m4-4v4m0 0h4"
+                />
+              </svg>
+            </div>
+            <h4 class="text-lg font-semibold mb-2 text-white">
+              Lightning Fast
+            </h4>
+            <p class="text-gray-400 text-sm">
+              Lightweight, efficient, and designed to load in milliseconds.
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div
+            class="p-8 bg-gray-900/50 rounded-2xl border border-gray-800 hover:border-gray-700 transition"
+          >
+            <div class="text-white mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-8 h-8 mx-auto"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m5 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+            <h4 class="text-lg font-semibold mb-2 text-white">
+              Beautifully Minimal
+            </h4>
+            <p class="text-gray-400 text-sm">
+              Focus on your message with an elegant, distraction-free layout.
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div
+            class="p-8 bg-gray-900/50 rounded-2xl border border-gray-800 hover:border-gray-700 transition"
+          >
+            <div class="text-white mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-8 h-8 mx-auto"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8v8m0 0l-3-3m3 3l3-3m9-2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+            <h4 class="text-lg font-semibold mb-2 text-white">
+              Fully Responsive
+            </h4>
+            <p class="text-gray-400 text-sm">
+              Seamlessly adapts to every screen size and device type.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-24 border-t border-gray-800">
+      <div
+        class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-10"
+      >
+        <div class="md:w-1/2">
+          <h3 class="text-3xl font-semibold text-white mb-4">Less is More</h3>
+          <p class="text-gray-400 mb-6 leading-relaxed">
+            The minimalist design philosophy means stripping away the
+            unnecessary and focusing on what matters — clarity, usability, and
+            purpose. This landing page embodies that ethos while staying modern
+            and responsive.
+          </p>
+          <a
+            href="#contact"
+            class="inline-block bg-white text-gray-950 px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition"
+          >
+            Contact Us
+          </a>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1522199710521-72d69614c702?auto=format&fit=crop&w=800&q=80"
+          alt="workspace"
+          class="rounded-2xl shadow-lg w-full md:w-1/2"
+        />
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-24 border-t border-gray-800">
+      <div class="container mx-auto px-6 text-center">
+        <h3 class="text-3xl font-semibold text-white mb-4">
+          Let's Work Together
+        </h3>
+        <p class="text-gray-400 mb-12 max-w-xl mx-auto">
+          Interested in collaborating or learning more? Drop a message below.
+        </p>
+        <form class="max-w-lg mx-auto space-y-4 text-left">
+          <input
+            type="text"
+            placeholder="Your Name"
+            class="w-full p-3 rounded-lg bg-gray-900 border border-gray-800 text-gray-200 placeholder-gray-500 focus:ring-2 focus:ring-blue-600 outline-none"
+          />
+          <input
+            type="email"
+            placeholder="Your Email"
+            class="w-full p-3 rounded-lg bg-gray-900 border border-gray-800 text-gray-200 placeholder-gray-500 focus:ring-2 focus:ring-blue-600 outline-none"
+          />
+          <textarea
+            rows="5"
+            placeholder="Your Message"
+            class="w-full p-3 rounded-lg bg-gray-900 border border-gray-800 text-gray-200 placeholder-gray-500 focus:ring-2 focus:ring-blue-600 outline-none"
+          ></textarea>
+          <button
+            type="submit"
+            class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="border-t border-gray-800 py-10 text-center text-gray-500 text-sm"
+    >
+      <p>© 2025 DarkBrand. Crafted with Tailwind CSS.</p>
+      <div class="flex justify-center space-x-6 mt-4">
+        <a href="#" class="hover:text-white transition">Twitter</a>
+        <a href="#" class="hover:text-white transition">GitHub</a>
+        <a href="#" class="hover:text-white transition">LinkedIn</a>
+      </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

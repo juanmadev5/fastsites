@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Minimal Magazine</title>
+  </head>
+
+  <body class="bg-white text-gray-800 font-sans">
+    <!-- Navbar -->
+    <header class="border-b border-gray-200">
+      <div
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-2xl font-semibold tracking-tight">Modern Journal</h1>
+        <nav class="hidden md:flex space-x-8 text-sm text-gray-600">
+          <a href="#" class="hover:text-black transition">Home</a>
+          <a href="#" class="hover:text-black transition">Articles</a>
+          <a href="#" class="hover:text-black transition">Topics</a>
+          <a href="#" class="hover:text-black transition">About</a>
+          <a href="#" class="hover:text-black transition">Contact</a>
+        </nav>
+        <button id="menu-btn" class="md:hidden text-gray-600 hover:text-black">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <nav
+        id="mobile-menu"
+        class="hidden md:hidden border-t border-gray-200 bg-gray-50"
+      >
+        <div class="flex flex-col p-4 space-y-3 text-gray-700 text-sm">
+          <a href="#" class="hover:text-black">Home</a>
+          <a href="#" class="hover:text-black">Articles</a>
+          <a href="#" class="hover:text-black">Topics</a>
+          <a href="#" class="hover:text-black">About</a>
+          <a href="#" class="hover:text-black">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Featured Article -->
+    <section class="py-16 border-b border-gray-200">
+      <div class="container mx-auto px-6 md:flex md:items-center md:gap-10">
+        <div class="md:w-1/2 mb-8 md:mb-0">
+          <img
+            src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&w=900&q=80"
+            alt="featured"
+            class="rounded-2xl shadow-md w-full object-cover"
+          />
+        </div>
+        <div class="md:w-1/2">
+          <p class="uppercase text-sm text-gray-500 mb-2">Featured Article</p>
+          <h2 class="text-4xl font-bold mb-4 leading-tight">
+            The Beauty of Simplicity in Modern Design
+          </h2>
+          <p class="text-gray-600 mb-6 leading-relaxed">
+            Minimalism isn't just a style — it's a way of thinking. Discover how
+            designers are using simplicity to enhance clarity, purpose, and
+            emotion in their work.
+          </p>
+          <a
+            href="#"
+            class="inline-block text-sm font-semibold text-black hover:underline"
+          >
+            Read More →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Articles Grid -->
+    <section class="py-16">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-3 gap-12">
+          <!-- Article 1 -->
+          <article>
+            <img
+              src="https://images.unsplash.com/photo-1607083206963-38f20a7d88cc?auto=format&fit=crop&w=800&q=80"
+              alt="article 1"
+              class="rounded-xl mb-4"
+            />
+            <h3 class="text-2xl font-semibold mb-2">Crafting with Purpose</h3>
+            <p class="text-gray-600 mb-3">
+              Thoughtful design begins with intention. Explore how focusing on
+              purpose can transform ordinary projects into meaningful
+              experiences.
+            </p>
+            <a href="#" class="text-sm font-semibold text-black hover:underline"
+              >Read More</a
+            >
+          </article>
+
+          <!-- Article 2 -->
+          <article>
+            <img
+              src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80"
+              alt="article 2"
+              class="rounded-xl mb-4"
+            />
+            <h3 class="text-2xl font-semibold mb-2">Typography as Emotion</h3>
+            <p class="text-gray-600 mb-3">
+              Great typography isn't decoration — it's communication. Learn how
+              to use type to convey tone and personality.
+            </p>
+            <a href="#" class="text-sm font-semibold text-black hover:underline"
+              >Read More</a
+            >
+          </article>
+
+          <!-- Article 3 -->
+          <article>
+            <img
+              src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80"
+              alt="article 3"
+              class="rounded-xl mb-4"
+            />
+            <h3 class="text-2xl font-semibold mb-2">
+              Visual Balance in Layouts
+            </h3>
+            <p class="text-gray-600 mb-3">
+              Design harmony comes from rhythm and proportion. Here’s how to
+              balance whitespace, color, and composition.
+            </p>
+            <a href="#" class="text-sm font-semibold text-black hover:underline"
+              >Read More</a
+            >
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-16 border-t border-gray-200 text-center">
+      <div class="container mx-auto px-6 max-w-lg">
+        <h3 class="text-3xl font-bold mb-4">Stay Inspired</h3>
+        <p class="text-gray-600 mb-6">
+          Join our newsletter to receive design insights, interviews, and new
+          stories every week.
+        </p>
+        <form
+          class="flex flex-col sm:flex-row items-center gap-4 justify-center"
+        >
+          <input
+            type="email"
+            placeholder="Your Email"
+            class="w-full sm:w-auto flex-1 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black outline-none"
+          />
+          <button
+            type="submit"
+            class="bg-black text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition"
+          >
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="border-t border-gray-200 py-10 text-center text-gray-500 text-sm"
+    >
+      <p>© 2025 Modern Journal — Minimalism in Words and Design.</p>
+      <div class="flex justify-center space-x-6 mt-4">
+        <a href="#" class="hover:text-black transition">Instagram</a>
+        <a href="#" class="hover:text-black transition">Twitter</a>
+        <a href="#" class="hover:text-black transition">LinkedIn</a>
+      </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
