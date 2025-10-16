@@ -8,8 +8,6 @@ Este repositorio es el showcase y el punto de partida para mi enfoque de **"Desi
 
 Cada ejemplo aquí no es solo un diseño; es un **Minimum Viable Product (MVP)** listo para recibir feedback, ser desplegado o escalarse inmediatamente.
 
-### En proceso de migración a React ⚠️
-Esto es solo un prototipo rápido, el verdadero website estará desarrollado con React proximamente!
 
 ---
 
