@@ -19,12 +19,12 @@ export default function Hero() {
           text-[var(--onBackground)] mb-6"
         >
           Websites Rápidas.
-          <span className="text-[var(--primary)]">Bajo Costo.</span> <br />
+          <span className="text-[var(--primary)]"> Bajo Costo.</span> <br />
           Mantenimiento Cero.
         </h2>
         <p className="text-lg sm:text-xl text-[var(--onSurface)] mb-12 max-w-3xl mx-auto">
           De idea a lanzamiento en semanas. Construyo tu <strong>MVP</strong>,
-          <strong>landing page</strong> o aplicación web con la tecnología más
+          <strong> landing page</strong> o aplicación web con la tecnología más
           moderna y eficiente.
         </p>
         <a
